@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre a Nutri Stéphanie Jackson</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <ul>
+                <li class="retangulo"><a href="/index.html">Página Inicial</a></li>
+                <li class="retangulo"><a href="/about.html">Sobre mim</a></li>
+                <li class="retangulo"><a href="/atendimento.html">Horário de Atendimento</a></li>
+                <li class="retangulo"><a href="/contact.html">Contato</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="header">
+                <img src="src/imagens/contato.png" width="150px"
+                    alt="Imagem de uma mulher sentada no chão, com as pernqas cruzadas na posição chamada de 'sentada em posição de lótus'. A mulher está com as costas eretas, braços erguidos e com punhos fechados, em sinal de comemoração. Em seu colo está um notebook aberto e ela está olhando para a tela sorrindo."><br>
+                <h1 id="nome">Nutri Stéphanie Jackson</h1>
+                <h3 id="slogan">Cuidando de você de dentro para fora</h3>
+            </div>
+            <div class="content">
+                <h2>Deixe sua Mensagem</h2>
+                <form name="formularioDeContato" method="post" target="_blank" onsubmit="enviarFormulario(event)">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" name="nome" placeholder="Nome" required>
+                        </div>
+                        <div class="col">
+                            <input type="email" name="email" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="tel" name="telefone" placeholder="Telefone" required>
+                        </div>
+                        <div class="col">
+                            <input type="tel" name="celular" placeholder="Celular" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <select name="assunto" required>
+                                <option value="">Selecione um Assunto</option>
+                                <option value="Reclamações">Reclamações</option>
+                                <option value="Elogios">Elogios</option>
+                                <option value="Dúvidas">Dúvidas</option>
+                                <option value="Agendamento de Consultas">Agendamento de Consultas</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <textarea name="mensagem" placeholder="Mensagem" required></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+                <script>
+                    function enviarFormulario(event) {
+                        event.preventDefault(); // impedir o envio padrão do formulário
+                        alert('As informações foram enviadas com sucesso!');
+                    }
+                </script>
+                <h2>Entre em contato através dos canais abaixo: </h2>
+                <div class="contactus">
+                    <p>
+                        <img src="/src/imagens/telefone.png" width="40px">
+                        (41) 3333-3333 ou (41) 99999-9999
+                    </p>
+                    <p>
+                        <img src="/src/imagens/email.png" width="40px">
+                        contato@nutristephanie.com.br
+                    </p>
+                    <hr>
+                </div>
+                <div class="endereco">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d5082485.710854837!2d-50.24103044480385!3d-25.98506147083706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjXCsDQ1JzQyLjEiUyA0OMKwMDQnMDEuMCJX!5e0!3m2!1spt-BR!2sbr!4v1685992303166!5m2!1spt-BR!2sbr" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="rodape">
+                    <hr>
+                    <p> Copyright © 2023 Nutri Stéphanie. Todos os direitos reservados.</p>
+                    <p> Desenvolvido por Elaine Stefani Santin <a href="https://github.com/NanneSantin"
+                            target="_blank"><img src="/src/imagens/github_logo.png" width="20px"
+                                alt="Imagem da logo da rede social github"></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
